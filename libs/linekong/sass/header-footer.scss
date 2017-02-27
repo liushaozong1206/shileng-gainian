@@ -1,0 +1,350 @@
+@charset "utf-8";
+/**
+ * 作者：周双龙
+ * 时间：2016/12/1
+ * 描述：当前文件描述
+ */
+
+/*public*/
+html, body, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei";
+}
+
+li {
+    list-style: none;
+}
+
+em {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*header*/
+.header {
+    position: relative;
+    background: #ffffff;
+    border-bottom: 1px solid #e7eff9;
+    height: 84px;
+    z-index: 100;
+    .header-con {
+        margin: 0 auto;
+        height: 100%;
+        width: 1200px;
+    }
+    a.linekong-logo {
+        float: left;
+        margin-right: 80px;
+        background: url("../img/logo.png") no-repeat center;
+        display: block;
+        height: 100%;
+        width: 143px;
+        img {
+            margin-top: (84-65)/2 + px;
+            display: block;
+        }
+    }
+    ul.first-nav {
+        float: left;
+        height: 100%;
+        li {
+            float: left;
+            height: 100px;
+            width: 110px;
+            a.first-title {
+                display: block;
+                height: 84px;
+                width: 100%;
+                color: #2b3033;
+                font-size: 16px;
+                line-height: 84px;
+                text-align: center;
+                &:hover {
+                    color: #5399f0;
+                }
+                &.active {
+                    background: url("../img/navlibk.jpg") no-repeat center;
+                    color: #fff;
+                }
+            }
+            .second-nav {
+                position: absolute;
+                left: 0;
+                top: 84px;
+                background: url("../img/nextmenu.png") repeat-x;
+                display: none;
+                height: 79px;
+                width: 100%;
+                color: #2e3e55;
+                font-size: 14px;
+                line-height: 79px;
+            }
+            .second-nav-con {
+                margin: 0 auto;
+                height: 100%;
+                width: 1200px;
+                text-align: center;
+                a {
+                    margin: 0 40px;
+                    padding-left: 40px;
+                    background: url("../img/next-menu.png") no-repeat;
+                    background-position: 0 28px;
+                    display: inline-block;
+                    height: 100%;
+                    color: #2e3e55;
+                    text-align: left;
+                    &:hover {
+                        background: url("../img/next-menu-hover.png") no-repeat;
+                        background-position: 0 28px;
+                        color: #1e84ff;
+                    }
+                    &.dynamic {
+                        background-position: 0 -208px;
+                        &:hover {
+                            background-position: 0 -208px;
+                        }
+                    }
+                    &.new-media {
+                        background-position: 0 -50px;
+                        &:hover {
+                            background-position: 0 -50px;
+                        }
+                    }
+                    &.linekong-game {
+                        background-position: 0 -1560px;
+                        &:hover {
+                            background-position: 0 -1560px;
+                        }
+                    }
+                    &.linekong-technology {
+                        background-position: 0 -1623px;
+                        &:hover {
+                            background-position: 0 -1623px;
+                        }
+                    }
+                    &.linekong-film {
+                        background-position: 0 -1688px;
+                        &:hover {
+                            background-position: 0 -1688px;
+                        }
+                    }
+                    &.mobile-game {
+                        background-position: 0 -130px;
+                        &:hover {
+                            background-position: 0 -130px;
+                        }
+                    }
+                    &.web-game {
+                        background-position: 0 -210px;
+                        &:hover {
+                            background-position: 0 -210px;
+                        }
+                    }
+                    &.pc-game {
+                        background-position: 0 -288px;
+                        &:hover {
+                            background-position: 0 -288px;
+                        }
+                    }
+                    &.bbs-game {
+                        background-position: 0 -368px;
+                        &:hover {
+                            background-position: 0 -368px;
+                        }
+                    }
+                    &.korea {
+                        background-position: 0 -1848px;
+                        &:hover {
+                            background-position: 0 -1848px;
+                        }
+                    }
+                    &.fuze-game {
+                        background-position: 0 -1750px;
+                        &:hover {
+                            background-position: 0 -1750px;
+                        }
+                    }
+                    &.company-intro {
+                        background-position: 0 -448px;
+                        &:hover {
+                            background-position: 0 -448px;
+                        }
+                    }
+                    &.company-culture {
+                        background-position: 0 -527px;
+                        &:hover {
+                            background-position: 0 -527px;
+                        }
+                    }
+                    &.linelong-event {
+                        background-position: 0 -605px;
+                        &:hover {
+                            background-position: 0 -605px;
+                        }
+                    }
+                    &.all-honor {
+                        background-position: 0 -688px;
+                        &:hover {
+                            background-position: 0 -688px;
+                        }
+                    }
+                    &.orca {
+                        background-position: 0 -765px;
+                        &:hover {
+                            background-position: 0 -765px;
+                        }
+                    }
+                    &.govern-company {
+                        background-position: 0 -842px;
+                        &:hover {
+                            background-position: 0 -842px;
+                        }
+                    }
+                    &.info-show {
+                        background-position: 0 -922px;
+                        &:hover {
+                            background-position: 0 -922px;
+                        }
+                    }
+                    &.investor-relation {
+                        background-position: 0 -1002px;
+                        &:hover {
+                            background-position: 0 -1002px;
+                        }
+                    }
+                    &.contact-us {
+                        background-position: 0 -1080px;
+                        &:hover {
+                            background-position: 0 -1080px;
+                        }
+                    }
+                    &.join-us {
+                        background-position: 0 -1405px;
+                        &:hover {
+                            background-position: 0 -1405px;
+                        }
+                    }
+                    &.society-recruit {
+                        background-position: 0 -1238px;
+                        &:hover {
+                            background-position: 0 -1238px;
+                        }
+                    }
+                    &.know-lingkong {
+                        background-position: 0 -1488px;
+                        &:hover {
+                            background-position: 0 -1488px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .other-language {
+        float: right;
+        margin-top: 24px;
+        position: relative;
+        height: 38px;
+        width: 38px;
+        font-size: 14px;
+        cursor: pointer;
+        span {
+            background: #a9cdf8;
+            border: 1px solid #87b9f5;
+            display: block;
+            height: 36px;
+            width: 36px;
+            color: #fff;
+            line-height: 36px;
+            text-align: center;
+            em {
+                background: url("../img/language-sj.png") no-repeat;
+                background-position: 16px 29px;
+                display: block;
+            }
+        }
+        .lang-menu {
+            position: absolute;
+            left: 0;
+            top: 38px;
+            display: none;
+            width: 100%;
+            a {
+                background: #a9cdf8;
+                border: 1px solid #87b9f5;
+                border-top: none;
+                display: block;
+                height: 36px;
+                width: 36px;
+                color: #fff;
+                line-height: 36px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+/*footer*/
+.footer {
+    padding: 30px 0;
+    background: #f3f3f3;
+    .footer-con {
+        margin: 0 auto;
+        height: 75px;
+        width: 1200px;
+    }
+    a.footer-logo {
+        float: left;
+        background: url("../img/footer-logo.png") no-repeat center;
+        display: block;
+        height: 100%;
+        width: 240px;
+    }
+    .footer-info {
+        float: left;
+        color: #767676;
+        font-size: 12px;
+        line-height: 24px;
+        span {
+            margin: 0 10px;
+        }
+        a {
+            color: #767676;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .header{
+        .header-con{
+            width: 1000px;
+            ul.first-nav{
+                li{
+                    width: 90px;
+                    a.first-title{
+                        font-size: 14px;
+                    }
+                    .second-nav-con{
+                        width: 1000px;
+                        a{
+                            margin: 0 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        .footer-con{
+            width: 1000px;
+        }
+    }
+}

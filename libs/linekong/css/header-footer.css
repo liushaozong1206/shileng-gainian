@@ -1,0 +1,345 @@
+@charset "UTF-8";
+/**
+ * 作者：周双龙
+ * 时间：2016/12/1
+ * 描述：当前文件描述
+ */
+/*public*/
+html, body, ul, li, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Microsoft YaHei UI", "Microsoft YaHei";
+}
+
+li {
+  list-style: none;
+}
+
+em {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*header*/
+.header {
+  position: relative;
+  background: #ffffff;
+  border-bottom: 1px solid #e7eff9;
+  height: 84px;
+  z-index: 100;
+}
+.header .header-con {
+  margin: 0 auto;
+  height: 100%;
+  width: 1200px;
+}
+.header a.linekong-logo {
+  float: left;
+  margin-right: 80px;
+  background: url("../img/logo.png") no-repeat center;
+  display: block;
+  height: 100%;
+  width: 143px;
+}
+.header a.linekong-logo img {
+  margin-top: 9.5px;
+  display: block;
+}
+.header ul.first-nav {
+  float: left;
+  height: 100%;
+}
+.header ul.first-nav li {
+  float: left;
+  height: 100px;
+  width: 110px;
+}
+.header ul.first-nav li a.first-title {
+  display: block;
+  height: 84px;
+  width: 100%;
+  color: #2b3033;
+  font-size: 16px;
+  line-height: 84px;
+  text-align: center;
+}
+.header ul.first-nav li a.first-title:hover {
+  color: #5399f0;
+}
+.header ul.first-nav li a.first-title.active {
+  background: url("../img/navlibk.jpg") no-repeat center;
+  color: #fff;
+}
+.header ul.first-nav li .second-nav {
+  position: absolute;
+  left: 0;
+  top: 84px;
+  background: url("../img/nextmenu.png") repeat-x;
+  display: none;
+  height: 79px;
+  width: 100%;
+  color: #2e3e55;
+  font-size: 14px;
+  line-height: 79px;
+}
+.header ul.first-nav li .second-nav-con {
+  margin: 0 auto;
+  height: 100%;
+  width: 1200px;
+  text-align: center;
+}
+.header ul.first-nav li .second-nav-con a {
+  margin: 0 40px;
+  padding-left: 40px;
+  background: url("../img/next-menu.png") no-repeat;
+  background-position: 0 28px;
+  display: inline-block;
+  height: 100%;
+  color: #2e3e55;
+  text-align: left;
+}
+.header ul.first-nav li .second-nav-con a:hover {
+  background: url("../img/next-menu-hover.png") no-repeat;
+  background-position: 0 28px;
+  color: #1e84ff;
+}
+.header ul.first-nav li .second-nav-con a.dynamic {
+  background-position: 0 -208px;
+}
+.header ul.first-nav li .second-nav-con a.dynamic:hover {
+  background-position: 0 -208px;
+}
+.header ul.first-nav li .second-nav-con a.new-media {
+  background-position: 0 -50px;
+}
+.header ul.first-nav li .second-nav-con a.new-media:hover {
+  background-position: 0 -50px;
+}
+.header ul.first-nav li .second-nav-con a.linekong-game {
+  background-position: 0 -1560px;
+}
+.header ul.first-nav li .second-nav-con a.linekong-game:hover {
+  background-position: 0 -1560px;
+}
+.header ul.first-nav li .second-nav-con a.linekong-technology {
+  background-position: 0 -1623px;
+}
+.header ul.first-nav li .second-nav-con a.linekong-technology:hover {
+  background-position: 0 -1623px;
+}
+.header ul.first-nav li .second-nav-con a.linekong-film {
+  background-position: 0 -1688px;
+}
+.header ul.first-nav li .second-nav-con a.linekong-film:hover {
+  background-position: 0 -1688px;
+}
+.header ul.first-nav li .second-nav-con a.mobile-game {
+  background-position: 0 -130px;
+}
+.header ul.first-nav li .second-nav-con a.mobile-game:hover {
+  background-position: 0 -130px;
+}
+.header ul.first-nav li .second-nav-con a.web-game {
+  background-position: 0 -210px;
+}
+.header ul.first-nav li .second-nav-con a.web-game:hover {
+  background-position: 0 -210px;
+}
+.header ul.first-nav li .second-nav-con a.pc-game {
+  background-position: 0 -288px;
+}
+.header ul.first-nav li .second-nav-con a.pc-game:hover {
+  background-position: 0 -288px;
+}
+.header ul.first-nav li .second-nav-con a.bbs-game {
+  background-position: 0 -368px;
+}
+.header ul.first-nav li .second-nav-con a.bbs-game:hover {
+  background-position: 0 -368px;
+}
+.header ul.first-nav li .second-nav-con a.korea {
+  background-position: 0 -1848px;
+}
+.header ul.first-nav li .second-nav-con a.korea:hover {
+  background-position: 0 -1848px;
+}
+.header ul.first-nav li .second-nav-con a.fuze-game {
+  background-position: 0 -1750px;
+}
+.header ul.first-nav li .second-nav-con a.fuze-game:hover {
+  background-position: 0 -1750px;
+}
+.header ul.first-nav li .second-nav-con a.company-intro {
+  background-position: 0 -448px;
+}
+.header ul.first-nav li .second-nav-con a.company-intro:hover {
+  background-position: 0 -448px;
+}
+.header ul.first-nav li .second-nav-con a.company-culture {
+  background-position: 0 -527px;
+}
+.header ul.first-nav li .second-nav-con a.company-culture:hover {
+  background-position: 0 -527px;
+}
+.header ul.first-nav li .second-nav-con a.linelong-event {
+  background-position: 0 -605px;
+}
+.header ul.first-nav li .second-nav-con a.linelong-event:hover {
+  background-position: 0 -605px;
+}
+.header ul.first-nav li .second-nav-con a.all-honor {
+  background-position: 0 -688px;
+}
+.header ul.first-nav li .second-nav-con a.all-honor:hover {
+  background-position: 0 -688px;
+}
+.header ul.first-nav li .second-nav-con a.orca {
+  background-position: 0 -765px;
+}
+.header ul.first-nav li .second-nav-con a.orca:hover {
+  background-position: 0 -765px;
+}
+.header ul.first-nav li .second-nav-con a.govern-company {
+  background-position: 0 -842px;
+}
+.header ul.first-nav li .second-nav-con a.govern-company:hover {
+  background-position: 0 -842px;
+}
+.header ul.first-nav li .second-nav-con a.info-show {
+  background-position: 0 -922px;
+}
+.header ul.first-nav li .second-nav-con a.info-show:hover {
+  background-position: 0 -922px;
+}
+.header ul.first-nav li .second-nav-con a.investor-relation {
+  background-position: 0 -1002px;
+}
+.header ul.first-nav li .second-nav-con a.investor-relation:hover {
+  background-position: 0 -1002px;
+}
+.header ul.first-nav li .second-nav-con a.contact-us {
+  background-position: 0 -1080px;
+}
+.header ul.first-nav li .second-nav-con a.contact-us:hover {
+  background-position: 0 -1080px;
+}
+.header ul.first-nav li .second-nav-con a.join-us {
+  background-position: 0 -1405px;
+}
+.header ul.first-nav li .second-nav-con a.join-us:hover {
+  background-position: 0 -1405px;
+}
+.header ul.first-nav li .second-nav-con a.society-recruit {
+  background-position: 0 -1238px;
+}
+.header ul.first-nav li .second-nav-con a.society-recruit:hover {
+  background-position: 0 -1238px;
+}
+.header ul.first-nav li .second-nav-con a.know-lingkong {
+  background-position: 0 -1488px;
+}
+.header ul.first-nav li .second-nav-con a.know-lingkong:hover {
+  background-position: 0 -1488px;
+}
+.header .other-language {
+  float: right;
+  margin-top: 24px;
+  position: relative;
+  height: 38px;
+  width: 38px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.header .other-language span {
+  background: #a9cdf8;
+  border: 1px solid #87b9f5;
+  display: block;
+  height: 36px;
+  width: 36px;
+  color: #fff;
+  line-height: 36px;
+  text-align: center;
+}
+.header .other-language span em {
+  background: url("../img/language-sj.png") no-repeat;
+  background-position: 16px 29px;
+  display: block;
+}
+.header .other-language .lang-menu {
+  position: absolute;
+  left: 0;
+  top: 38px;
+  display: none;
+  width: 100%;
+}
+.header .other-language .lang-menu a {
+  background: #a9cdf8;
+  border: 1px solid #87b9f5;
+  border-top: none;
+  display: block;
+  height: 36px;
+  width: 36px;
+  color: #fff;
+  line-height: 36px;
+  text-align: center;
+}
+
+/*footer*/
+.footer {
+  padding: 30px 0;
+  background: #f3f3f3;
+}
+.footer .footer-con {
+  margin: 0 auto;
+  height: 75px;
+  width: 1200px;
+}
+.footer a.footer-logo {
+  float: left;
+  background: url("../img/footer-logo.png") no-repeat center;
+  display: block;
+  height: 100%;
+  width: 240px;
+}
+.footer .footer-info {
+  float: left;
+  color: #767676;
+  font-size: 12px;
+  line-height: 24px;
+}
+.footer .footer-info span {
+  margin: 0 10px;
+}
+.footer .footer-info a {
+  color: #767676;
+}
+
+@media screen and (max-width: 1200px) {
+  .header .header-con {
+    width: 1000px;
+  }
+  .header .header-con ul.first-nav li {
+    width: 90px;
+  }
+  .header .header-con ul.first-nav li a.first-title {
+    font-size: 14px;
+  }
+  .header .header-con ul.first-nav li .second-nav-con {
+    width: 1000px;
+  }
+  .header .header-con ul.first-nav li .second-nav-con a {
+    margin: 0 30px;
+  }
+
+  .footer .footer-con {
+    width: 1000px;
+  }
+}
+
+/*# sourceMappingURL=header-footer.css.map */
