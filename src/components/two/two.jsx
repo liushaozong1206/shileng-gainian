@@ -1,7 +1,7 @@
 /**
  * 作者：刘少宗
  * 时间：2017/2/27
- * 描述：白雪公主
+ * 描述：福禄篇
  */
 
 
@@ -38,6 +38,7 @@ class Two extends Component {
                     <div className="two_dialog2"><img src={two_dialog2}/></div>
                     <div className="two_dialog3"><img src={two_dialog3}/></div>
                     <div className="two_dialog4"><img src={two_dialog4}/></div>
+                    <div className="box_text"></div>
                 </div>
             </div>
         )

@@ -1,4 +1,5 @@
 /*----------import module----------*/
+@import "../../libs/scss/bourbon/bourbon";
 @import "../../libs/scss/normalize";
 @import "../../libs/scss/public";
 
@@ -8,7 +9,6 @@ body,html{
   overflow: hidden;
   #root{
     height: 100%;
-
     .swiper-container {
       width: 100%;
       height: 100%;
@@ -76,7 +76,15 @@ body,html{
               width: 363px;
               height: 249px;
               background: url("../public/img/mk.png") no-repeat;
-
+              @include animation(flash ease-in-out 2s infinite);
+              p{
+                position: absolute;
+                height: 140px;
+                width: 140px;
+                right: 35px;
+                top: 40px;
+                cursor: pointer;
+              }
             }
             .tab_con{
               position: relative;
@@ -110,15 +118,24 @@ body,html{
                   height: 65px;
                   background: url("../public/img/btn2-2.png") no-repeat;
                 }
+                .list_btn2.on{
+                  background: url("../public/img/btn2.png") no-repeat;
+                }
                 .list_btn3{
                   width: 102px;
                   height: 65px;
                   background: url("../public/img/btn3-3.png") no-repeat;
                 }
+                .list_btn3.on{
+                  background: url("../public/img/btn3.png") no-repeat;
+                }
                 .list_btn4{
                   width: 102px;
                   height: 65px;
                   background: url("../public/img/btn4-4.png") no-repeat;
+                }
+                .list_btn4.on{
+                  background: url("../public/img/btn4.png") no-repeat;
                 }
               }
             }
@@ -191,12 +208,42 @@ body,html{
           -webkit-align-items: center;
           align-items: center;
         }
+        .box_text{
+          position: absolute;
+          left: -37px;
+          top: -8px;
+          width: 750px;
+          height: 390px;
+          p{
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: inline-block;
+            font-size: 14px;
+            color: #000;
+            height: 27px;
+            border: 1px #f8cd39 solid;
+            background-color:rgba(246,234,195,0.7);
+            line-height: 27px;
+            padding:0 10px;
+            z-index: 100;
+          }
+        }
       }
 
 
     }
   }
+
+
 }
 
+@include keyframes(flash){
+  from {
+    background: url("../public/img/mk.png") no-repeat;
+  }
 
-
+  to {
+    background: url("../public/img/mk_1.png") no-repeat;
+  }
+}

@@ -36,6 +36,7 @@ class One extends Component {
                     <div className="one_dialog2"><img src={Dialog2}/></div>
                     <div className="one_dialog3"><img src={Dialog3}/></div>
                     <div className="one_dialog4"><img src={Dialog4}/></div>
+                    <div className="box_text"></div>
                 </div>
             </div>
         )

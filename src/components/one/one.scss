@@ -7,7 +7,7 @@
 @import "../../../libs/scss/bourbon/bourbon";
 
 
-.one_box{
+.swiper-slide-active .one_box{
   width: 740px;
   height: 510px;
   position: absolute;
@@ -19,6 +19,7 @@
     width: 486px;
     height: 48px;
     background: url("./img/one_1.png") no-repeat;
+    @include animation(fadeIn 0.7s ease-in 0s both);
   }
   .one_bg{
     position: absolute;
@@ -27,37 +28,97 @@
     width: 680px;
     height: 380px;
     background: url("./img/one_bg.jpg") no-repeat;
+    @include animation(fadeIn 1.3s ease-in 0.2s both);
     .one_girl{
       position: absolute;
       left: 15px;
       bottom: 0;
+      @include transform-origin(50% 100%);
+      @include animation(zoomIn 0.5s ease-in 1s both);
     }
     .one_man{
       position: absolute;
       right: -44px;
       bottom: -62px;
+      @include animation(zoomInDown 0.5s ease-in 1.6s both);
     }
     .one_dialog1{
       position: absolute;
       left: 15px;
       top: 10px;
+      @include animation(slideInUp 0.5s ease-in 2.4s both);
     }
     .one_dialog2{
       position: absolute;
       left: 304px;
       top: 10px;
+      @include animation(slideInUp 0.5s ease-in 3.2s both);
     }
     .one_dialog3{
       position: absolute;
       left: 235px;
       top: 230px;
+      @include animation(slideInUp 0.5s ease-in 4s both);
     }
     .one_dialog4{
       position: absolute;
       left: 417px;
       top: 267px;
+      @include animation(slideInUp 0.5s ease-in 4.8s both);
     }
-
   }
 }
 
+
+
+@include keyframes(zoomInDown){
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+@include keyframes(fadeIn){
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@include keyframes (zoomIn) {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+@include keyframes (slideInUp) {
+  from {
+    -webkit-transform: translate3d(0, 20%, 0);
+    transform: translate3d(0, 20%, 0);
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}

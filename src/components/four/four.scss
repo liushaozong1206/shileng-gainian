@@ -1,0 +1,174 @@
+@charset "utf-8";
+/**
+ * 作者：刘少宗
+ * 时间：2016/11/30
+ * 描述：光之国
+ */
+@import "../../../libs/scss/bourbon/bourbon";
+
+
+.four_box{
+  width: 740px;
+  height: 510px;
+  position: absolute;
+  left: 92px;
+  top: 79px;
+  .four_text{
+    position: absolute;
+    left: 64px;
+    width: 591px;
+    height: 48px;
+    background: url("./img/four_1.png") no-repeat;
+    @include animation(fadeIn 0.7s ease-in 0s both);
+  }
+  .four_bg{
+    position: absolute;
+    left: 17px;
+    top: 70px;
+    width: 680px;
+    height: 380px;
+    background: url("./img/four_bg.jpg") no-repeat;
+    @include animation(fadeIn 1.3s ease-in 0.2s both);
+    .four_left{
+      position: absolute;
+      left: -84px;
+      bottom: -61px;
+      @include animation(bounceInDownLeft ease-in-out .4s 1s both);
+    }
+    .four_right{
+      position: absolute;
+      bottom: -61px;
+      right: 30px;
+      @include animation(bounceInDown ease-in-out .4s 1.6s both);
+    }
+    .four_dialog1{
+      position: absolute;
+      top: 12px;
+      right: 195px;
+      @include animation(slideInUp 0.5s ease-in 2.4s both);
+    }
+    .four_dialog2{
+      position: absolute;
+      bottom: 30px;
+      left: 125px;
+      @include animation(rotateAnimate 0.5s ease-in 3.2s both);
+    }
+    .four_dialog3{
+      position: absolute;
+      top: 17px;
+      right: -20px;
+      @include animation(slideInUp 0.5s ease-in 4s both);
+    }
+    .four_dialog4{
+      position: absolute;
+      top: 143px;
+      right: 190px;
+      @include animation(slideInUp 0.5s ease-in 4.8s both);
+    }
+    .four_dialog5{
+      position: absolute;
+      top: 143px;
+      right: -25px;
+      @include animation(slideInUp 0.5s ease-in 5.6s both);
+    }
+    .four_dialog6{
+      position: absolute;
+      bottom: 15px;
+      right: 160px;
+      @include animation(slideInUp 0.5s ease-in 6.4s both);
+    }
+    .four_dialog7{
+      position: absolute;
+      bottom: 30px;
+      right: 0px;
+      @include animation(slideInUp 0.5s ease-in 7.2s both);
+    }
+  }
+
+}
+@include keyframes(fadeIn){
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@include keyframes (bounceInDownLeft) {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function:cubic-bezier(0.215, .61, .355, 1)
+  }
+  0% {
+    opacity:0;
+    -webkit-transform:translate3d(-30%,50%,0)
+  }
+  60% {
+    opacity:1;
+    -webkit-transform:translate3d(8%, -8%, 0)
+  }
+  75% {
+    -webkit-transform:translate3d(-5%, 5%, 0)
+  }
+  90% {
+    -webkit-transform:translate3d(2.5%, -2.5%, 0)
+  }
+  100% {
+    -webkit-transform:translate3d(0, 0, 0)
+  }
+}
+@include keyframes (bounceInDown) {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function:cubic-bezier(0.215, .61, .355, 1)
+  }
+  0% {
+    opacity:0;
+    -webkit-transform:translate3d(0, -50%, 0)
+  }
+  60% {
+    opacity:1;
+    -webkit-transform:translate3d(0, 8%, 0)
+  }
+  75% {
+    -webkit-transform:translate3d(0, -5%, 0)
+  }
+  90% {
+    -webkit-transform:translate3d(0, 2.5%, 0)
+  }
+  100% {
+    -webkit-transform:translate3d(0, 0, 0)
+  }
+}
+@include keyframes (slideInUp) {
+  from {
+    -webkit-transform: translate3d(0, 20%, 0);
+    transform: translate3d(0, 20%, 0);
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@include keyframes(rotateAnimate) {
+  from, 20%, 40%, 60%, 80%, to {
+    @include animation-timing-function(cubic-bezier(0.28, 1.37, 0.39, 1.43));
+  }
+  0% {
+    opacity: 0;
+    @include transform( scale(0));
+  }
+  50% {
+    @include transform( scale(1.3));
+  }
+  75% {
+    @include transform( scale(0.8));
+  }
+  100% {
+    opacity: 1;
+    @include transform( scale(1));
+  }
+}

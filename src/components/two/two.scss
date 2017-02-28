@@ -2,7 +2,7 @@
 /**
  * 作者：刘少宗
  * 时间：2016/11/30
- * 描述：白雪公主
+ * 描述：福禄篇
  */
 @import "../../../libs/scss/bourbon/bourbon";
 
@@ -19,6 +19,7 @@
     width: 484px;
     height: 48px;
     background: url("./img/two_1.png") no-repeat;
+    @include animation(fadeIn 0.7s ease-in 0s both);
   }
   .two_bg{
     position: absolute;
@@ -27,42 +28,169 @@
     width: 680px;
     height: 380px;
     background: url("./img/two_bg.jpg") no-repeat;
+    @include animation(fadeIn 1.3s ease-in 0.2s both);
     .two_man{
       position: absolute;
       left: 45px;
       bottom: -60px;
+      @include animation(bounceInLeft 0.5s ease-in 0.8s both);
     }
     .two_w1{
       position: absolute;
       right: 180px;
       bottom: -30px;
+      @include animation(zoomInDown 0.5s ease-in 1.4s both);
     }
     .two_w2{
       position: absolute;
       right: -17px;
       bottom: -25px;
+      @include animation(bounceInRight 0.7s ease-in 2s both);
     }
     .two_dialog1{
       position: absolute;
       left: -30px;
       top: 50px;
+      @include animation(slideInUp 0.5s ease-in 2.6s both);
     }
     .two_dialog2{
       position: absolute;
       left: 270px;
       top: 50px;
+      @include animation(rotateAnimate 0.5s ease-in 3.2s both);
     }
     .two_dialog3{
       position: absolute;
       left: 170px;
       bottom: 30px;
+      @include animation(slideInUp 0.5s ease-in 3.8s both);
     }
     .two_dialog4{
       position: absolute;
       right: -30px;
       top: 75px;
+      @include animation(rotateAnimate 0.5s ease-in 4.4s both);
     }
   }
 
 }
 
+@include keyframes(fadeIn){
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@include keyframes (zoomIn) {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+@include keyframes (slideInUp) {
+  from {
+    -webkit-transform: translate3d(0, 20%, 0);
+    transform: translate3d(0, 20%, 0);
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@include keyframes (bounceInLeft) {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100px, 0, 0);
+    transform: translate3d(-100px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@include keyframes (bounceInRight) {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@include keyframes(rotateAnimate) {
+  from, 20%, 40%, 60%, 80%, to {
+    @include animation-timing-function(cubic-bezier(0.28, 1.37, 0.39, 1.43));
+  }
+  0% {
+    opacity: 0;
+    @include transform( scale(0));
+  }
+  50% {
+    @include transform( scale(1.3));
+  }
+  75% {
+    @include transform( scale(0.8));
+  }
+  100% {
+    opacity: 1;
+    @include transform( scale(1));
+  }
+}
