@@ -1,0 +1,63 @@
+@charset "utf-8";
+/**
+ * 作者：刘少宗
+ * 时间：2016/11/30
+ * 描述：白雪公主
+ */
+@import "../../../libs/scss/bourbon/bourbon";
+
+
+.one_box{
+  width: 740px;
+  height: 510px;
+  position: absolute;
+  left: 92px;
+  top: 79px;
+  .one_text{
+    position: absolute;
+    left: 117px;
+    width: 486px;
+    height: 48px;
+    background: url("./img/one_1.png") no-repeat;
+  }
+  .one_bg{
+    position: absolute;
+    left: 17px;
+    top: 70px;
+    width: 680px;
+    height: 380px;
+    background: url("./img/one_bg.jpg") no-repeat;
+    .one_girl{
+      position: absolute;
+      left: 15px;
+      bottom: 0;
+    }
+    .one_man{
+      position: absolute;
+      right: -44px;
+      bottom: -62px;
+    }
+    .one_dialog1{
+      position: absolute;
+      left: 15px;
+      top: 10px;
+    }
+    .one_dialog2{
+      position: absolute;
+      left: 304px;
+      top: 10px;
+    }
+    .one_dialog3{
+      position: absolute;
+      left: 235px;
+      top: 230px;
+    }
+    .one_dialog4{
+      position: absolute;
+      left: 417px;
+      top: 267px;
+    }
+
+  }
+}
+

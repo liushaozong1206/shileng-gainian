@@ -16,10 +16,168 @@ body,html{
       margin-right: auto;
       .swiper-wrapper{
         height: 100%;
+        .slide2{
+          width: 100%;
+          height: 100%;
+          background: url("../public/img/slide2.jpg") no-repeat;
+          .two_slide_box{
+            width: 1022px;
+            height: 682px;
+            position: relative;
+            margin: 0 auto;
+            background: url("../public/img/tv_bg.png") no-repeat;
+            .tow_logo{
+              position: absolute;
+              width: 249px;
+              height: 105px;
+              left: 0;
+              top: -90px;
+            }
+            .two_Timg{
+              position: absolute;
+              width: 550px;
+              top: -90px;
+              left: 330px;
+              p{
+                position: absolute;
+              }
+              .p1{
+                width: 99px;
+                height: 119px;
+                float:left;
+              }
+              .p2{
+                width: 90px;
+                height: 98px;
+                float:left;
+                top: 14px;
+                left: 127px;
+              }
+              .p3{
+                width: 104px;
+                height: 91px;
+                float:left;
+                left: 227px;
+                top: 23px;
+              }
+              .p4{
+                width: 131px;
+                height: 113px;
+                float:left;
+                left: 327px;
+                top: 5px;
+                z-index: 10;
+              }
+            }
+            .yuyue{
+              position: absolute;
+              right: -20px;
+              top: -68px;
+              width: 363px;
+              height: 249px;
+              background: url("../public/img/mk.png") no-repeat;
+
+            }
+            .tab_con{
+              position: relative;
+              .tab_left{
+                .left_one,.left_two,.left_three,.left_four{
+                  display: none;
+                }
+                .left_one.active,.left_two.active,.left_three.active,.left_four.active{
+                  display: block;
+                }
+              }
+              .tab_btn{
+                position: absolute;
+                width: 102px;
+                right: 40px;
+                top: 190px;
+                li{
+                  margin-bottom: 20px;
+                  cursor: pointer;
+                }
+                .list_btn1{
+                  width: 102px;
+                  height: 65px;
+                  background: url("../public/img/btn1-1.png") no-repeat;
+                }
+                .list_btn1.on{
+                  background: url("../public/img/btn1.png") no-repeat;
+                }
+                .list_btn2{
+                  width: 102px;
+                  height: 65px;
+                  background: url("../public/img/btn2-2.png") no-repeat;
+                }
+                .list_btn3{
+                  width: 102px;
+                  height: 65px;
+                  background: url("../public/img/btn3-3.png") no-repeat;
+                }
+                .list_btn4{
+                  width: 102px;
+                  height: 65px;
+                  background: url("../public/img/btn4-4.png") no-repeat;
+                }
+              }
+            }
+            .i_bot{
+              position: absolute;
+              bottom: 106px;
+              left: 108px;
+              height: 30px;
+              width: 400px;
+              .i_on{
+                position: absolute;
+                left: 0px;
+                width: 45px;
+                height: 22px;
+                background: url("../public/img/close.png") no-repeat;
+                cursor: pointer;
+                top: 4px;
+              }
+              .i_on.on{
+                width: 46px;
+                height: 22px;
+                cursor: pointer;
+                background: url("../public/img/on.png") no-repeat;
+              }
+              .inp{
+                position: absolute;
+                padding:0 5px;
+                left: 60px;
+                width: 200px;
+                height: 26px;
+                border:1px #ffa944 solid;
+                background: #fff5d5;
+                font-size: 12px;
+                line-height: 26px;
+                color: #8b4602;
+              }
+              .i_btn{
+                position: absolute;
+                left: 285px;
+                width: 80px;
+                text-align: center;
+                font-size: 14px;
+                line-height: 26px;
+                height: 26px;
+                border: 1px #ffa944 solid;
+                background: #fffbf0;
+                border-radius: 6px;
+                color: #333333;
+                cursor: pointer;
+              }
+              .i_btn:hover{
+                background: #fff6d9;
+              }
+            }
+          }
+        }
         .swiper-slide {
           text-align: center;
           font-size: 18px;
-          background: #fff;
           display: -webkit-box;
           display: -ms-flexbox;
           display: -webkit-flex;

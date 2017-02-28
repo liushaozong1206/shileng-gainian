@@ -1,0 +1,68 @@
+@charset "utf-8";
+/**
+ * 作者：刘少宗
+ * 时间：2016/11/30
+ * 描述：白雪公主
+ */
+@import "../../../libs/scss/bourbon/bourbon";
+
+
+.two_box{
+  width: 740px;
+  height: 510px;
+  position: absolute;
+  left: 92px;
+  top: 79px;
+  .two_text{
+    position: absolute;
+    left: 117px;
+    width: 484px;
+    height: 48px;
+    background: url("./img/two_1.png") no-repeat;
+  }
+  .two_bg{
+    position: absolute;
+    left: 17px;
+    top: 70px;
+    width: 680px;
+    height: 380px;
+    background: url("./img/two_bg.jpg") no-repeat;
+    .two_man{
+      position: absolute;
+      left: 45px;
+      bottom: -60px;
+    }
+    .two_w1{
+      position: absolute;
+      right: 180px;
+      bottom: -30px;
+    }
+    .two_w2{
+      position: absolute;
+      right: -17px;
+      bottom: -25px;
+    }
+    .two_dialog1{
+      position: absolute;
+      left: -30px;
+      top: 50px;
+    }
+    .two_dialog2{
+      position: absolute;
+      left: 270px;
+      top: 50px;
+    }
+    .two_dialog3{
+      position: absolute;
+      left: 170px;
+      bottom: 30px;
+    }
+    .two_dialog4{
+      position: absolute;
+      right: -30px;
+      top: 75px;
+    }
+  }
+
+}
+
