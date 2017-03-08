@@ -4,72 +4,259 @@
 @import "../../libs/scss/public";
 
 /*----------my style----------*/
-body,html{
+body, html {
+  input {
+    outline: none;
+  }
   height: 100%;
   overflow: hidden;
-  #root{
+  .zxt_headerbox {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+  }
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
+  }
+  .shade {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    display: none;
+  }
+  .bomb {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 528px;
+    height: 278px;
+    margin-left: -264px;
+    margin-top: -132px;
+    background: url("../public/img/t.jpg") no-repeat;
+    z-index: 101;
+    display: none;
+    .b_close {
+      position: absolute;
+      right: 7px;
+      top: 7px;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+    }
+    .b_input {
+      position: absolute;
+      width: 425px;
+      top: 125px;
+      left: 60px;
+      input {
+        width: 290px;
+        height: 45px;
+        padding: 0 10px;
+        border: 1px #d5281c solid;
+      }
+      .b_btn {
+        position: absolute;
+        right: 0px;
+        top: -2px;
+        width: 104px;
+        height: 55px;
+        background: url("../public/img/t_btn.png") no-repeat;
+        cursor: pointer;
+      }
+      .b_text {
+        position: absolute;
+        top: 60px;
+        font-size: 14px;
+        color: red;
+      }
+    }
+
+  }
+  .success {
+    position: absolute;
+    width: 528px;
+    height: 278px;
+    left: 50%;
+    top: 50%;
+    margin-left: -264px;
+    margin-top: -139px;
+    background: url("../public/img/succeed.jpg") no-repeat;
+    display: none;
+    z-index: 101;
+    .b_close {
+      position: absolute;
+      right: 7px;
+      top: 7px;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+    }
+  }
+  #root {
+    position: relative;
+    z-index: 10;
     height: 100%;
     .swiper-container {
       width: 100%;
       height: 100%;
       margin-left: auto;
       margin-right: auto;
-      .swiper-wrapper{
+      .swiper-wrapper {
         height: 100%;
-        .slide2{
+        .slide1 {
+          background: #fff;
+        }
+        .slide2 {
           width: 100%;
           height: 100%;
           background: url("../public/img/slide2.jpg") no-repeat;
-          .two_slide_box{
+          .bottom {
+            transform: translate3d(0px, -200px, 0px);
+            -webkit-transform: translate3d(0px, -200px, 0px);
+          }
+          .two_slide_box {
             width: 1022px;
             height: 682px;
             position: relative;
-            margin: 0 auto;
+            top: 110px;
             background: url("../public/img/tv_bg.png") no-repeat;
-            .tow_logo{
+            .right_t{
+              position: absolute;
+              width: 190px;
+              right: 40px;
+              z-index: 50;
+              top: -170px;
+              height: 100px;
+              .wx a{
+                display: block;
+                float: left;
+                width: 28px;
+                height: 39px;
+                background: url("../public/img/w.png")no-repeat;
+                background-position: 0 0px;
+                margin-right: 15px;
+              }
+              .sina a{
+                display: block;
+                float: left;
+                width: 46px;
+                height: 39px;
+                background: url("../public/img/w.png")no-repeat;
+                background-position: -41px 0px;
+                margin-right: 15px;
+                margin-top: 1px;
+              }
+              .qq a{
+                display: block;
+                float: left;
+                width: 31px;
+                height: 38px;
+                background: url("../public/img/w.png")no-repeat;
+                background-position: -100px 0px;
+                margin-right: 15px;
+                margin-top: 1px;
+              }
+              .bbs a{
+                display: block;
+                float: left;
+                width: 23px;
+                height: 35px;
+                background: url("../public/img/w.png")no-repeat;
+                background-position: -145px -3px;
+                margin-top: 4px;
+              }
+              .wx a:hover{
+                width: 28px;
+                height: 39px;
+                background: url("../public/img/w.png")no-repeat;
+                background-position: 0px -44px;
+              }
+              .sina a:hover{
+                width: 46px;
+                height: 39px;
+                background: url("../public/img/w.png")no-repeat;
+                background-position: -41px -44px;
+              }
+              .qq a:hover{
+                width: 31px;
+                height: 38px;
+                background: url("../public/img/w.png")no-repeat;
+                background-position: -100px -44px;
+              }
+              .bbs a:hover{
+                width: 23px;
+                height: 35px;
+                background: url("../public/img/w.png")no-repeat;
+                background-position: -145px -47px;
+              }
+              .wx_pop{
+                position: absolute;
+                padding: 10px;
+                top: 50px;
+                left: -44px;
+                background: #fff;
+                display: none;
+                border: #7e4216 1px solid;
+                p{
+                  color: #242424;
+                  font-size: 12px;
+                  text-align: center;
+                  padding-top: 6px;
+                }
+              }
+            }
+            .tow_logo {
               position: absolute;
               width: 249px;
               height: 105px;
               left: 0;
               top: -90px;
             }
-            .two_Timg{
+            .two_Timg {
               position: absolute;
               width: 550px;
               top: -90px;
               left: 330px;
-              p{
+              p {
                 position: absolute;
               }
-              .p1{
+              .p1 {
                 width: 99px;
                 height: 119px;
-                float:left;
+                float: left;
               }
-              .p2{
+              .p2 {
                 width: 90px;
                 height: 98px;
-                float:left;
+                float: left;
                 top: 14px;
                 left: 127px;
               }
-              .p3{
+              .p3 {
                 width: 104px;
                 height: 91px;
-                float:left;
+                float: left;
                 left: 227px;
                 top: 23px;
               }
-              .p4{
+              .p4 {
                 width: 131px;
                 height: 113px;
-                float:left;
+                float: left;
                 left: 327px;
                 top: 5px;
                 z-index: 10;
               }
             }
-            .yuyue{
+            .yuyue {
               position: absolute;
               right: -20px;
               top: -68px;
@@ -77,7 +264,7 @@ body,html{
               height: 249px;
               background: url("../public/img/mk.png") no-repeat;
               @include animation(flash ease-in-out 2s infinite);
-              p{
+              p {
                 position: absolute;
                 height: 140px;
                 width: 140px;
@@ -86,66 +273,66 @@ body,html{
                 cursor: pointer;
               }
             }
-            .tab_con{
+            .tab_con {
               position: relative;
-              .tab_left{
-                .left_one,.left_two,.left_three,.left_four{
+              .tab_left {
+                .left_one, .left_two, .left_three, .left_four {
                   display: none;
                 }
-                .left_one.active,.left_two.active,.left_three.active,.left_four.active{
+                .left_one.active, .left_two.active, .left_three.active, .left_four.active {
                   display: block;
                 }
               }
-              .tab_btn{
+              .tab_btn {
                 position: absolute;
                 width: 102px;
                 right: 40px;
                 top: 190px;
-                li{
+                li {
                   margin-bottom: 20px;
                   cursor: pointer;
                 }
-                .list_btn1{
+                .list_btn1 {
                   width: 102px;
                   height: 65px;
                   background: url("../public/img/btn1-1.png") no-repeat;
                 }
-                .list_btn1.on{
+                .list_btn1.on {
                   background: url("../public/img/btn1.png") no-repeat;
                 }
-                .list_btn2{
+                .list_btn2 {
                   width: 102px;
                   height: 65px;
                   background: url("../public/img/btn2-2.png") no-repeat;
                 }
-                .list_btn2.on{
+                .list_btn2.on {
                   background: url("../public/img/btn2.png") no-repeat;
                 }
-                .list_btn3{
+                .list_btn3 {
                   width: 102px;
                   height: 65px;
                   background: url("../public/img/btn3-3.png") no-repeat;
                 }
-                .list_btn3.on{
+                .list_btn3.on {
                   background: url("../public/img/btn3.png") no-repeat;
                 }
-                .list_btn4{
+                .list_btn4 {
                   width: 102px;
                   height: 65px;
                   background: url("../public/img/btn4-4.png") no-repeat;
                 }
-                .list_btn4.on{
+                .list_btn4.on {
                   background: url("../public/img/btn4.png") no-repeat;
                 }
               }
             }
-            .i_bot{
+            .i_bot {
               position: absolute;
               bottom: 106px;
               left: 108px;
               height: 30px;
-              width: 400px;
-              .i_on{
+              width: 275px;
+              .i_on {
                 position: absolute;
                 left: 0px;
                 width: 45px;
@@ -154,45 +341,54 @@ body,html{
                 cursor: pointer;
                 top: 4px;
               }
-              .i_on.on{
+              .i_on.on {
                 width: 46px;
                 height: 22px;
                 cursor: pointer;
                 background: url("../public/img/on.png") no-repeat;
               }
-              .inp{
+              .inp {
                 position: absolute;
-                padding:0 5px;
+                padding: 0 5px;
                 left: 60px;
                 width: 200px;
                 height: 26px;
-                border:1px #ffa944 solid;
+                border: 1px #ffa944 solid;
                 background: #fff5d5;
                 font-size: 12px;
                 line-height: 26px;
                 color: #8b4602;
               }
-              .i_btn{
+              .i_btn {
                 position: absolute;
-                left: 285px;
-                width: 80px;
+                left: 195px;
+                bottom: -92px;
                 text-align: center;
                 font-size: 14px;
                 line-height: 26px;
-                height: 26px;
+                height: 29px;
                 border: 1px #ffa944 solid;
                 background: #fffbf0;
                 border-radius: 6px;
                 color: #333333;
                 cursor: pointer;
+
               }
-              .i_btn:hover{
-                background: #fff6d9;
-              }
+
             }
           }
         }
+        .bottom_m{
+          width: 100%;
+          height: 102px;
+          position:absolute;
+          left:0;
+          bottom:0;
+          right:0;
+          z-index: -1;
+        }
         .swiper-slide {
+          overflow: hidden;
           text-align: center;
           font-size: 18px;
           display: -webkit-box;
@@ -208,13 +404,13 @@ body,html{
           -webkit-align-items: center;
           align-items: center;
         }
-        .box_text{
+        .box_text {
           position: absolute;
           left: -37px;
           top: -8px;
           width: 750px;
           height: 390px;
-          p{
+          p {
             position: absolute;
             left: 0;
             top: 0;
@@ -223,22 +419,40 @@ body,html{
             color: #000;
             height: 27px;
             border: 1px #f8cd39 solid;
-            background-color:rgba(246,234,195,0.7);
+            background-color: rgba(246, 234, 195, 0.7);
             line-height: 27px;
-            padding:0 10px;
+            padding: 0 10px;
             z-index: 100;
           }
         }
       }
 
-
     }
+
   }
 
+  .i_btn {
+    position: absolute;
+    left: 300px;
+    bottom: 14px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 26px;
+    height: 29px;
+    border: 1px #ffa944 solid;
+    background: #fffbf0;
+    border-radius: 6px;
+    color: #333333;
+    cursor: pointer;
+    padding: 0 10px;
 
+  }
+  .i_btn:hover {
+    background: #fff6d9;
+  }
 }
 
-@include keyframes(flash){
+@include keyframes(flash) {
   from {
     background: url("../public/img/mk.png") no-repeat;
   }

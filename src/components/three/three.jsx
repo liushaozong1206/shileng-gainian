@@ -37,6 +37,7 @@ class Three extends Component {
                     <div className="three_dialog3"><img src={ThreeDialog3}/></div>
                     <div className="box_text"></div>
                 </div>
+                <input type='button' className="i_btn btn03" defaultValue={'发布弹幕'} disabled=""></input>
             </div>
         )
     }

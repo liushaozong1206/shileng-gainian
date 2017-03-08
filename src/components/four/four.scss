@@ -40,6 +40,90 @@
       bottom: -61px;
       right: 30px;
       @include animation(bounceInDown ease-in-out .4s 1.6s both);
+      .han1{
+        position: absolute;
+        top:30px;
+        left: 100px;
+        opacity: 0;
+        img{
+          @include transform(rotate(90deg));
+        }
+        @include animation(hand1 0.3s ease-in 3s both);
+      }
+      .han2{
+        position: absolute;
+        top:60px;
+        left: 150px;
+        opacity: 0;
+        img{
+          @include transform(rotate(40deg));
+        }
+        @include animation(hand1 0.3s ease-in 4.5s both);
+      }
+      .han3{
+        position: absolute;
+        top:20px;
+        left: 120px;
+        opacity: 0;
+        img{
+          @include transform(rotate(10deg));
+        }
+        @include animation(hand1 0.3s ease-in 5.5s both);
+      }
+      .han4{
+        position: absolute;
+        top:60px;
+        left: 120px;
+        opacity: 0;
+        img{
+          @include transform(rotate(90deg));
+        }
+        @include animation(hand1 0.3s ease-in 6s both);
+      }
+      .han5{
+        position: absolute;
+        top:83px;
+        left: 100px;
+        opacity: 0;
+        img{
+          @include transform(rotate(60deg));
+        }
+        @include animation(hand1 0.3s ease-in 7s both);
+      }
+      .tear_l{
+        position: absolute;
+        left: 115px;
+        top: 75px;
+        width: 6px;
+        height: 40px;
+        overflow: hidden;
+        p{
+          position: absolute;
+          left: 0;
+          top: -40px;
+          width: 6px;
+          height: 40px;
+          background: #8fe9ff;
+          @include animation(tear 0.3s ease-in 7s both);
+        }
+      }
+      .tear_r{
+        position: absolute;
+        left: 145px;
+        top: 75px;
+        width: 6px;
+        height: 40px;
+        overflow: hidden;
+        p{
+          position: absolute;
+          left: 0;
+          top: -40px;
+          width: 6px;
+          height: 40px;
+          background: #8fe9ff;
+          @include animation(tear 0.3s ease-in 7s both);
+        }
+      }
     }
     .four_dialog1{
       position: absolute;
@@ -75,14 +159,15 @@
       position: absolute;
       bottom: 15px;
       right: 160px;
-      @include animation(slideInUp 0.5s ease-in 6.4s both);
+      @include animation(slideInUp 0.5s ease-in 7.2s both);
     }
     .four_dialog7{
       position: absolute;
       bottom: 30px;
       right: 0px;
-      @include animation(slideInUp 0.5s ease-in 7.2s both);
+      @include animation(slideInUp 0.5s ease-in 6.4s both);
     }
+
   }
 
 }
@@ -170,5 +255,25 @@
   100% {
     opacity: 1;
     @include transform( scale(1));
+  }
+}
+@include keyframes(hand1){
+  0%{
+    opacity: 0
+  }
+  10%{
+    opacity: 0.5;
+    @include transform(scale(1.5));
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@include keyframes(tear){
+  0%{
+    @include transform(translateY(0px));
+  }
+  100%{
+    @include transform(translateY(40px));
   }
 }

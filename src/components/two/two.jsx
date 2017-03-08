@@ -32,14 +32,17 @@ class Two extends Component {
                 <div className="two_text"></div>
                 <div className="two_bg">
                     <div className="two_man"><img src={Twom}/></div>
-                    <div className="two_w1"><img src={Twow1}/></div>
-                    <div className="two_w2"><img src={Twow2}/></div>
+                    <div className="two_w1"><img src={Twow1}/><div className="two_l1"><span className="Sspan01"></span><span className="Sspan02"></span></div></div>
+                    <div className="two_w2"><img src={Twow2}/><div className="two_l2"><span className="Tspan01"></span><span className="Tspan02"></span></div></div>
+
+
                     <div className="two_dialog1"><img src={two_dialog1}/></div>
                     <div className="two_dialog2"><img src={two_dialog2}/></div>
                     <div className="two_dialog3"><img src={two_dialog3}/></div>
                     <div className="two_dialog4"><img src={two_dialog4}/></div>
                     <div className="box_text"></div>
                 </div>
+                <input type='button' className="i_btn btn02" defaultValue={'发布弹幕'} disabled=""></input>
             </div>
         )
     }

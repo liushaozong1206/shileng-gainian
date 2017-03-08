@@ -1,3 +1,4 @@
+/*
 var ajaxGet = function (url, fn) {
     $.ajax({
         type: 'GET',
@@ -8,10 +9,10 @@ var ajaxGet = function (url, fn) {
         }
     })
 };
+*/
 
 
-var proxyUrl = 'http://192.168.84.43:3000',
-    lineUrl = 'http://img.linekong.com';
+var proxyUrl = 'http://192.168.84.1:3000'
 
 
-export {ajaxGet, proxyUrl, lineUrl}
+export { proxyUrl}

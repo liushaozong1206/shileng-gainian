@@ -6,7 +6,6 @@
  */
 @import "../../../libs/scss/bourbon/bourbon";
 
-
 .swiper-slide-active .one_box{
   width: 740px;
   height: 510px;
@@ -35,6 +34,16 @@
       bottom: 0;
       @include transform-origin(50% 100%);
       @include animation(zoomIn 0.5s ease-in 1s both);
+    }
+    .one_girl_f{
+      position: absolute;
+      width: 60px;
+      height: 36px;
+      background:url("./img/f.png") no-repeat;
+      top: 110px;
+      left: 170px;
+      z-index: 10;
+      @include animation(fadeIn 0.5s ease-in 4.5s both);
     }
     .one_man{
       position: absolute;

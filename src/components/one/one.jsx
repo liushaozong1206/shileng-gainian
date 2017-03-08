@@ -31,6 +31,7 @@ class One extends Component {
                 <div className="one_text"></div>
                 <div className="one_bg">
                     <div className="one_girl"><img src={Girl}/></div>
+                    <div className="one_girl_f"></div>
                     <div className="one_man"><img src={Man}/></div>
                     <div className="one_dialog1"><img src={Dialog1}/></div>
                     <div className="one_dialog2"><img src={Dialog2}/></div>
@@ -38,6 +39,7 @@ class One extends Component {
                     <div className="one_dialog4"><img src={Dialog4}/></div>
                     <div className="box_text"></div>
                 </div>
+                <input type='button' className="i_btn btn01" defaultValue={'发布弹幕'} disabled=""></input>
             </div>
         )
     }
