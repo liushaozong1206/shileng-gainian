@@ -57,7 +57,7 @@ module.exports = {
             'window.jQuery': 'jquery'
         }),
         new HtmlwebpackPlugin({
-            title: '十冷概念站',
+            title: 'wiki',
             filepath: DIST_PATH,
             template: path.resolve(TEM_PATH, 'index.html'),
             chunks: ['index'],
@@ -74,8 +74,8 @@ module.exports = {
         contentBase: ROOT_PATH,
         host: '0.0.0.0',
         proxy: [{
-            context: ['/*'],
-            target: 'http://www.linekong.com',
+            context: ['/api/website/getcolumncontent'],
+            target: 'http://opm.8864.com',
             changeOrigin: true,
             ws: true,
             secure: false

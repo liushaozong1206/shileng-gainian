@@ -12,7 +12,18 @@ var ajaxGet = function (url, fn) {
 */
 
 
-var proxyUrl = 'http://192.168.84.1:3000'
+var proxyUrl = 'http://opm.8864.com';
+
+var isMobile = function(){
+    var u = navigator.userAgent.toLowerCase();
+
+    if(u.indexOf('iphone')>0 || u.indexOf('android')>0 || u.indexOf('xiaomi')>0){
+
+        window.location.href = 'http://swl.8864.com/mobile';
+        return false;
+    }
+}
 
 
-export { proxyUrl}
+
+export { proxyUrl,isMobile}
